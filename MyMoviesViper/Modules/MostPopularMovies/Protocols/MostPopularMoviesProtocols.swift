@@ -104,3 +104,8 @@ protocol MostPopularMovies_PresenterToViewProtocol: AnyObject {
 // MARK: PRESENTER -> ROUTER
 protocol MostPopularMovies_PresenterToRouterProtocol: AnyObject {
 }
+
+
+protocol PathsProtocol {
+    var pathToUse : String { get } //variable de lectura  NO ME QUEDA MUY CLARO EL USO DE ESTA VARIABLE
+}

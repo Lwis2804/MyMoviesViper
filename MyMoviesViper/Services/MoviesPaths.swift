@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+enum mostPopularMoviesPath {
+    case getMostPopularMovies
+    
+    func getPath() -> String {
+        switch self {
+        case .getMostPopularMovies:
+            return ""
+    
+        }
+    }
+}
