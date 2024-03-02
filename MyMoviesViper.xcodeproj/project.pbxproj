@@ -25,6 +25,8 @@
 		AA628CD22B86590E00C2F2E6 /* MostPopularMoviesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA628CCD2B86590E00C2F2E6 /* MostPopularMoviesProtocols.swift */; };
 		AA628CD32B86590E00C2F2E6 /* MostPopularMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA628CCE2B86590E00C2F2E6 /* MostPopularMoviesInteractor.swift */; };
 		AA628CD52B86594B00C2F2E6 /* MostPopularMoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA628CD42B86594B00C2F2E6 /* MostPopularMoviesResponse.swift */; };
+		AAE606A32B92DD52006D94F7 /* MostPopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE606A12B92DD52006D94F7 /* MostPopularTableViewCell.swift */; };
+		AAE606A42B92DD52006D94F7 /* MostPopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE606A22B92DD52006D94F7 /* MostPopularTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		AA628CCD2B86590E00C2F2E6 /* MostPopularMoviesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesProtocols.swift; sourceTree = "<group>"; };
 		AA628CCE2B86590E00C2F2E6 /* MostPopularMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesInteractor.swift; sourceTree = "<group>"; };
 		AA628CD42B86594B00C2F2E6 /* MostPopularMoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesResponse.swift; sourceTree = "<group>"; };
+		AAE606A12B92DD52006D94F7 /* MostPopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTableViewCell.swift; sourceTree = "<group>"; };
+		AAE606A22B92DD52006D94F7 /* MostPopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 		AA628CA82B86567500C2F2E6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AAE6069F2B92DD0A006D94F7 /* UITableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +212,23 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		AAE6069F2B92DD0A006D94F7 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AAE606A02B92DD23006D94F7 /* MostPopularMovies */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		AAE606A02B92DD23006D94F7 /* MostPopularMovies */ = {
+			isa = PBXGroup;
+			children = (
+				AAE606A12B92DD52006D94F7 /* MostPopularTableViewCell.swift */,
+				AAE606A22B92DD52006D94F7 /* MostPopularTableViewCell.xib */,
+			);
+			path = MostPopularMovies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,6 +289,7 @@
 			files = (
 				AA628C9F2B8654C000C2F2E6 /* LaunchScreen.storyboard in Resources */,
 				AA628C9C2B8654C000C2F2E6 /* Assets.xcassets in Resources */,
+				AAE606A42B92DD52006D94F7 /* MostPopularTableViewCell.xib in Resources */,
 				AA628C9A2B8654BE00C2F2E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +303,7 @@
 			files = (
 				AA628CAD2B8656CD00C2F2E6 /* UIView+Extension.swift in Sources */,
 				AA628CB62B86576100C2F2E6 /* MoviesPaths.swift in Sources */,
+				AAE606A32B92DD52006D94F7 /* MostPopularTableViewCell.swift in Sources */,
 				AA628CCF2B86590E00C2F2E6 /* MostPopularMoviesPresenter.swift in Sources */,
 				AA628C972B8654BE00C2F2E6 /* ViewController.swift in Sources */,
 				AA628C932B8654BE00C2F2E6 /* AppDelegate.swift in Sources */,
