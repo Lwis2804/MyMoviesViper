@@ -27,6 +27,7 @@
 		AA628CD52B86594B00C2F2E6 /* MostPopularMoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA628CD42B86594B00C2F2E6 /* MostPopularMoviesResponse.swift */; };
 		AAE606A32B92DD52006D94F7 /* MostPopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE606A12B92DD52006D94F7 /* MostPopularTableViewCell.swift */; };
 		AAE606A42B92DD52006D94F7 /* MostPopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE606A22B92DD52006D94F7 /* MostPopularTableViewCell.xib */; };
+		AAE606A62B92DF30006D94F7 /* MostPopularMoviesInteractor.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE606A52B92DF30006D94F7 /* MostPopularMoviesInteractor.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		AA628CD42B86594B00C2F2E6 /* MostPopularMoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesResponse.swift; sourceTree = "<group>"; };
 		AAE606A12B92DD52006D94F7 /* MostPopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTableViewCell.swift; sourceTree = "<group>"; };
 		AAE606A22B92DD52006D94F7 /* MostPopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularTableViewCell.xib; sourceTree = "<group>"; };
+		AAE606A52B92DF30006D94F7 /* MostPopularMoviesInteractor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularMoviesInteractor.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				AA628CCE2B86590E00C2F2E6 /* MostPopularMoviesInteractor.swift */,
+				AAE606A52B92DF30006D94F7 /* MostPopularMoviesInteractor.xib */,
 			);
 			path = Interarctor;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				AA628C9C2B8654C000C2F2E6 /* Assets.xcassets in Resources */,
 				AAE606A42B92DD52006D94F7 /* MostPopularTableViewCell.xib in Resources */,
 				AA628C9A2B8654BE00C2F2E6 /* Main.storyboard in Resources */,
+				AAE606A62B92DF30006D94F7 /* MostPopularMoviesInteractor.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
