@@ -5,4 +5,13 @@
 //  Created by LUIS GONZALEZ on 21/02/24.
 //
 
-import Foundation
+import UIKit
+
+extension UIView {
+    class var identifier : String{
+        return String(describing: self)
+    }
+    class var nib : UINib{
+        return UINib(nibName: identifier, bundle: .main)
+    }
+}
