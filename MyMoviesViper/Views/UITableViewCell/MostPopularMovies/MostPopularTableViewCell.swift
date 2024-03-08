@@ -9,9 +9,17 @@ import UIKit
 
 class MostPopularTableViewCell: UITableViewCell {
 
+    @IBOutlet var mostPopularMovieName: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func configurateCell( withEntry entry : MostPopularResults? ) {
+        guard let entrada = entry else { return }
+        self.mostPopularMovieName.text = "\(entrada.title ?? "")"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

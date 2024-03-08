@@ -25,9 +25,10 @@
 		AA628CD22B86590E00C2F2E6 /* MostPopularMoviesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA628CCD2B86590E00C2F2E6 /* MostPopularMoviesProtocols.swift */; };
 		AA628CD32B86590E00C2F2E6 /* MostPopularMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA628CCE2B86590E00C2F2E6 /* MostPopularMoviesInteractor.swift */; };
 		AA628CD52B86594B00C2F2E6 /* MostPopularMoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA628CD42B86594B00C2F2E6 /* MostPopularMoviesResponse.swift */; };
+		AA726B0A2B995677006ECE7C /* MostPopularMoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA726B092B995677006ECE7C /* MostPopularMoviesViewController.xib */; };
+		AA7EDE6C2B9BCE5300FB8563 /* MostPopularMoviesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EDE6B2B9BCE5300FB8563 /* MostPopularMoviesExtension.swift */; };
 		AAE606A32B92DD52006D94F7 /* MostPopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE606A12B92DD52006D94F7 /* MostPopularTableViewCell.swift */; };
 		AAE606A42B92DD52006D94F7 /* MostPopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE606A22B92DD52006D94F7 /* MostPopularTableViewCell.xib */; };
-		AAE606A62B92DF30006D94F7 /* MostPopularMoviesInteractor.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE606A52B92DF30006D94F7 /* MostPopularMoviesInteractor.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +52,10 @@
 		AA628CCD2B86590E00C2F2E6 /* MostPopularMoviesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesProtocols.swift; sourceTree = "<group>"; };
 		AA628CCE2B86590E00C2F2E6 /* MostPopularMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesInteractor.swift; sourceTree = "<group>"; };
 		AA628CD42B86594B00C2F2E6 /* MostPopularMoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesResponse.swift; sourceTree = "<group>"; };
+		AA726B092B995677006ECE7C /* MostPopularMoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularMoviesViewController.xib; sourceTree = "<group>"; };
+		AA7EDE6B2B9BCE5300FB8563 /* MostPopularMoviesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMoviesExtension.swift; sourceTree = "<group>"; };
 		AAE606A12B92DD52006D94F7 /* MostPopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularTableViewCell.swift; sourceTree = "<group>"; };
 		AAE606A22B92DD52006D94F7 /* MostPopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularTableViewCell.xib; sourceTree = "<group>"; };
-		AAE606A52B92DF30006D94F7 /* MostPopularMoviesInteractor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularMoviesInteractor.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				AA628CCC2B86590E00C2F2E6 /* MostPopularMoviesViewController.swift */,
+				AA7EDE6B2B9BCE5300FB8563 /* MostPopularMoviesExtension.swift */,
+				AA726B092B995677006ECE7C /* MostPopularMoviesViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				AA628CCE2B86590E00C2F2E6 /* MostPopularMoviesInteractor.swift */,
-				AAE606A52B92DF30006D94F7 /* MostPopularMoviesInteractor.xib */,
 			);
 			path = Interarctor;
 			sourceTree = "<group>";
@@ -292,9 +295,9 @@
 			files = (
 				AA628C9F2B8654C000C2F2E6 /* LaunchScreen.storyboard in Resources */,
 				AA628C9C2B8654C000C2F2E6 /* Assets.xcassets in Resources */,
+				AA726B0A2B995677006ECE7C /* MostPopularMoviesViewController.xib in Resources */,
 				AAE606A42B92DD52006D94F7 /* MostPopularTableViewCell.xib in Resources */,
 				AA628C9A2B8654BE00C2F2E6 /* Main.storyboard in Resources */,
-				AAE606A62B92DF30006D94F7 /* MostPopularMoviesInteractor.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7EDE6C2B9BCE5300FB8563 /* MostPopularMoviesExtension.swift in Sources */,
 				AA628CAD2B8656CD00C2F2E6 /* UIView+Extension.swift in Sources */,
 				AA628CB62B86576100C2F2E6 /* MoviesPaths.swift in Sources */,
 				AAE606A32B92DD52006D94F7 /* MostPopularTableViewCell.swift in Sources */,
