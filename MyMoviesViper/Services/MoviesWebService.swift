@@ -9,6 +9,7 @@ import Foundation
 
 protocol NetworkApiProtocol: AnyObject {
     var urlConfiguration : MostPopMovUrlConfig { get set } // preguntar por el get set
+    func consumeService<T : Decodable>(withCompilationHandler handler : @escaping (Result <T, ErrorWebService>) -> Void)
 
 }
 
@@ -20,15 +21,17 @@ class MoviesWebService : NetworkApiProtocol {
         self.urlConfiguration = urlConfiguration
     }
     
-    public func consumeService<T>(withComplitionHandler handler : @escaping(Result <T,ErrorWebService>) -> Void) where T : Decodable {
+    public func consumeService<T>(withCompilationHandler handler : @escaping(Result <T,ErrorWebService>) -> Void) where T : Decodable {
         guard let url = urlConfiguration.configureUrl() else {
             handler(.failure(.wrongUrl))
-        return } // no entiendo muy bien este return
-        URLSession.shared.dataTask(with: .init(url: url)) { data, response, _ in // du? aq en init en que es data y response
+        return } // el return indica termino de funcion y puede o no regresar un valor
+        var strUrl = "\(url)"
+        strUrl = strUrl.replacingOccurrences(of: "%3F", with: "?")
+        URLSession.shared.dataTask(with: .init(url: URL(string: strUrl) ?? URL(fileURLWithPath: ""))) { data, response, _ in // data es dato duro y decode explica
             guard let data = data, let response = response as?
                     HTTPURLResponse,(200...299).contains(response.statusCode) else {
                 handler(.failure(.wrongJson))
-                return // tampcoo me queda claro este return
+                return
             }
             if let json = try? JSONDecoder().decode(T.self, from: data) { // no entiendo muy bien este data
                 handler(.success(json)) // porque el json es de tipo Decodable

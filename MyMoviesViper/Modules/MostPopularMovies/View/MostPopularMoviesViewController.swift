@@ -16,6 +16,8 @@ class MostPopularMoviesViewController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpTable()
+        presenter?.getToMostPopularMovies() // llamado de servicio al presenter
     }
     
     func setUpTable() {
@@ -23,11 +25,14 @@ class MostPopularMoviesViewController: UIViewController {
         self.mostPopularTable.dataSource = self
         self.mostPopularTable.register(MostPopularTableViewCell.nib, forCellReuseIdentifier: MostPopularTableViewCell.identifier)
     }
-    
-    
-    
 }
+
+
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension MostPopularMoviesViewController: MostPopularMovies_PresenterToViewProtocol {
+    func updateViewWithMostPopularMovies(withResponse response: MostPopularResponse) {
+        print("\n\n\n\n response in View contain  ----> \(response)\n\n\n\n")
+    }
+    
 }

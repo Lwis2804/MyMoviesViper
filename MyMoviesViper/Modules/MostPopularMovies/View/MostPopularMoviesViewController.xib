@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -9,32 +9,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController id="FNT-w0-UtB" customClass="MostPopularMoviesViewController" customModule="MyMoviesViper" customModuleProvider="target">
-            <view key="view" contentMode="scaleToFill" id="A87-47-V8g">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fvz-wN-Nkj">
-                        <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </tableView>
-                </subviews>
-                <viewLayoutGuide key="safeArea" id="Ggj-r6-HS9"/>
-                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                <constraints>
-                    <constraint firstItem="fvz-wN-Nkj" firstAttribute="leading" secondItem="Ggj-r6-HS9" secondAttribute="leading" id="2IF-rq-ARa"/>
-                    <constraint firstItem="fvz-wN-Nkj" firstAttribute="top" secondItem="Ggj-r6-HS9" secondAttribute="top" constant="60" id="V4K-pK-kzo"/>
-                    <constraint firstAttribute="trailing" secondItem="fvz-wN-Nkj" secondAttribute="trailing" id="abK-Cl-bgz"/>
-                    <constraint firstItem="fvz-wN-Nkj" firstAttribute="bottom" secondItem="Ggj-r6-HS9" secondAttribute="bottom" id="fdP-p3-JiV"/>
-                </constraints>
-            </view>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MostPopularMoviesViewController" customModule="MyMoviesViper" customModuleProvider="target">
             <connections>
-                <outlet property="mostPopularTable" destination="fvz-wN-Nkj" id="FHT-fG-DXp"/>
+                <outlet property="mostPopularTable" destination="UmV-Ke-76x" id="4E1-ld-DuO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="K9n-1F-gLm"/>
             </connections>
-            <point key="canvasLocation" x="114.375" y="8.4507042253521121"/>
-        </viewController>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UmV-Ke-76x">
+                    <rect key="frame" x="0.0" y="119" width="393" height="699"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UmV-Ke-76x" secondAttribute="bottom" id="X1q-iR-iZP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UmV-Ke-76x" secondAttribute="trailing" id="eXR-8n-Vy7"/>
+                <constraint firstItem="UmV-Ke-76x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fcf-W1-oep"/>
+                <constraint firstItem="UmV-Ke-76x" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="qQF-dj-Njv"/>
+            </constraints>
+            <point key="canvasLocation" x="22" y="-24"/>
+        </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
