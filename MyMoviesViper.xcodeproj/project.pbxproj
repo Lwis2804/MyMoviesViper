@@ -134,6 +134,7 @@
 		AA628CA92B86568000C2F2E6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AA745A6C2BABAA8A009CA608 /* New Group */,
 				AA628CB92B8657AC00C2F2E6 /* MostPopularMovies */,
 			);
 			path = Modules;
@@ -216,6 +217,13 @@
 				AA628CD42B86594B00C2F2E6 /* MostPopularMoviesResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		AA745A6C2BABAA8A009CA608 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		AAE6069F2B92DD0A006D94F7 /* UITableViewCell */ = {
