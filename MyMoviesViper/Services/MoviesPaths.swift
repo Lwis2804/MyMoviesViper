@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum mostPopularMoviesPath {
+enum allMoviesPath {
     case getMostPopularMovies
     
     func getPath() -> String {

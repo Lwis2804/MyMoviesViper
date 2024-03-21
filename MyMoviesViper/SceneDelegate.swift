@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        // guard let _ = (scene as? UIWindowScene) else { return }
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-        let home = MostPopularMoviesRouter.createModule()
+        let home = TabBarViewController()
         self.window?.rootViewController = home
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene

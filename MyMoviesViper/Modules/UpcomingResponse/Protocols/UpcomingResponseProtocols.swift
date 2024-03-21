@@ -1,6 +1,6 @@
-//  MostPopularMoviesProtocols.swift
+//  UpcomingResponseProtocols.swift
 //  MyMoviesViper
-//  Created by LUIS GONZALEZ on 21/02/24.
+//  Created by LUIS GONZALEZ on 20/03/24.
 //  
 //  ViperTemplate v.0.0.1 - (2023, NS-Bionick Development Team)
 
@@ -22,11 +22,11 @@ import Foundation
  */
 
 // MARK: VIEW -> PRESENTER
-protocol MostPopularMovies_ViewToPresenterProtocol: AnyObject {
-	var view: MostPopularMovies_PresenterToViewProtocol? { get set }
-	var interactor: MostPopularMovies_PresenterToInteractorProtocol? { get set }
-	var router: MostPopularMovies_PresenterToRouterProtocol? { get set }
-    func getToMostPopularMovies()
+protocol UpcomingResponse_ViewToPresenterProtocol: AnyObject {
+	var view: UpcomingResponse_PresenterToViewProtocol? { get set }
+	var interactor: UpcomingResponse_PresenterToInteractorProtocol? { get set }
+	var router: UpcomingResponse_PresenterToRouterProtocol? { get set }
+    func getToUpcomingResponse()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -48,9 +48,9 @@ protocol MostPopularMovies_ViewToPresenterProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> INTERACTOR
-protocol MostPopularMovies_PresenterToInteractorProtocol: AnyObject {
-    var presenter: MostPopularMovies_InteractorToPresenterProtocol? { get set }
-    func getMostPopularMoviesToInteractor()
+protocol UpcomingResponse_PresenterToInteractorProtocol: AnyObject {
+    var presenter: UpcomingResponse_InteractorToPresenterProtocol? { get set }
+    func getUpcomingResponseToInteractor()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -72,8 +72,8 @@ protocol MostPopularMovies_PresenterToInteractorProtocol: AnyObject {
  */
 
 // MARK: INTERACTOR -> PRESENTER
-protocol MostPopularMovies_InteractorToPresenterProtocol: AnyObject {
-    func getMostPopularMoviesFromInteractor(withResponse reponse : MostPopularResponse) 
+protocol UpcomingResponse_InteractorToPresenterProtocol: AnyObject {
+    func getUpcomingResponseFromInteractor(withResponse response : UpcomingResults)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -89,9 +89,9 @@ protocol MostPopularMovies_InteractorToPresenterProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> VIEW
-protocol MostPopularMovies_PresenterToViewProtocol: AnyObject {
-    var presenter: MostPopularMovies_ViewToPresenterProtocol? { get set }
-    func updateViewWithMostPopularMovies(withResponse response : MostPopularResponse )
+protocol UpcomingResponse_PresenterToViewProtocol: AnyObject {
+    var presenter: UpcomingResponse_ViewToPresenterProtocol? { get set }
+    func updateViewWithUpcomingResponse(withResponse response : UpcomingResults)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -106,10 +106,7 @@ protocol MostPopularMovies_PresenterToViewProtocol: AnyObject {
  */
 
 // MARK: PRESENTER -> ROUTER
-protocol MostPopularMovies_PresenterToRouterProtocol: AnyObject {
+protocol UpcomingResponse_PresenterToRouterProtocol: AnyObject {
 }
 
-
-protocol PathsProtocol {
-    var pathToUse : String { get } //variable de lectura  NO ME QUEDA MUY CLARO EL USO DE ESTA VARIABLE
-}
+//////////////////////////////////////// DUDA CON EL PATHS PROTOCOL ///////////////////
