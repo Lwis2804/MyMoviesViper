@@ -18,7 +18,7 @@ class MostPopularMoviesInteractor: MostPopularMovies_PresenterToInteractorProtoc
     
     func getMostPopularMoviesToInteractor() {
         print("\n\n\n\n on interactor   ---->\n\n\n\n")
-        let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MostPopMovUrlConfig(metodo: metodo, host: host, path: allMoviesPath.getMostPopularMovies.getPath()))
+        let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfig(metodo: metodo, host: host, path: MoviesPath.getMostPopularMovies.getPath()))
         print(service.urlConfiguration.path)
         service.consumeService { [weak self] (result:Result<MostPopularResponse, ErrorWebService>) in
             switch result {

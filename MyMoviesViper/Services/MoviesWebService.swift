@@ -8,16 +8,15 @@
 import Foundation
 
 protocol NetworkApiProtocol: AnyObject {
-    var urlConfiguration : MostPopMovUrlConfig { get set } // preguntar por el get set
+    var urlConfiguration : MoviesUrlConfig { get set } // preguntar por el get set
     func consumeService<T : Decodable>(withCompilationHandler handler : @escaping (Result <T, ErrorWebService>) -> Void)
-
 }
 
 class MoviesWebService : NetworkApiProtocol {
-    var urlConfiguration : MostPopMovUrlConfig
+    var urlConfiguration : MoviesUrlConfig
     
     
-    init(urlConfiguration : MostPopMovUrlConfig) {  // duda aqui en el INIT
+    init(urlConfiguration : MoviesUrlConfig) {  // duda aqui en el INIT
         self.urlConfiguration = urlConfiguration
     }
     

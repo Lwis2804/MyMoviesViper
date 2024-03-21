@@ -33,7 +33,8 @@ class UpcomingResponseViewController: UIViewController {
 // MARK: - P R E S E N T E R · T O · V I E W
 extension UpcomingResponseViewController: UpcomingResponse_PresenterToViewProtocol {
     func updateViewWithUpcomingResponse(withResponse response: UpcomingResults) {
-        self.upcomingMoviesResponse.append(response)
+   //     self.upcomingMoviesResponse = response
+        print(response)
         self.upcomingResponseTable.reloadData()
         
         

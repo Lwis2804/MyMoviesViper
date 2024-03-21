@@ -33,7 +33,9 @@ class MostPopularMoviesViewController: UIViewController {
 extension MostPopularMoviesViewController: MostPopularMovies_PresenterToViewProtocol {
     func updateViewWithMostPopularMovies(withResponse response: MostPopularResponse) {
         print("\n\n\n\n response in View contain  ----> \(response)\n\n\n\n")
-        self.mostPopularmovies = response.results  ?? [] // NO TERMINO DE ENTENDER COMO ACCEDI SOLO A LOS TITULOS 
-        self.mostPopularTable.reloadData()
+        self.mostPopularmovies = response.results  ?? [] 
+        DispatchQueue.main.async {
+            self.mostPopularTable.reloadData()
+        }
     }
 }

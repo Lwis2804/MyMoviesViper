@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MostPopMovUrlConfig {
+struct MoviesUrlConfig {
     var metodo : String
     var host : String
     var path : PathsProtocol

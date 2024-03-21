@@ -22,6 +22,5 @@ struct UpcomingResults : Codable {
     var video : Bool?
     var vote_average : Double?
     var vote_count : Int?
-
 }
 
