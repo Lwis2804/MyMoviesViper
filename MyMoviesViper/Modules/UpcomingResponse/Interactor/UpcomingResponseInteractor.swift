@@ -12,8 +12,8 @@ class UpcomingResponseInteractor: UpcomingResponse_PresenterToInteractorProtocol
     private var host : String = "api.themoviedb.org"
     
     func getUpcomingResponseToInteractor() {
-        let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfig(metodo: metodo, host: host, path: MoviesPath.getMostPopularMovies.getPath()))
-        service.consumeService { [weak self] (result:Result<UpcomingResults,ErrorWebService>) in // no comprendo el consume servi
+        let service : NetworkApiProtocol = MoviesWebService(urlConfiguration: MoviesUrlConfig(metodo: metodo, host: host, path: MoviesPath.getUpcomingResponse.getPath()))
+        service.consumeService { [weak self] (result:Result<UpcomingResponse,ErrorWebService>) in // no comprendo el consume servi
             switch result {
             case .success(let succes):
                 self?.presenter?.getUpcomingResponseFromInteractor(withResponse: succes)

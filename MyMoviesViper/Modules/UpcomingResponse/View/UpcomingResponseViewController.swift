@@ -11,10 +11,10 @@ class UpcomingResponseViewController: UIViewController {
     
     @IBOutlet var upcomingResponseTable: UITableView!
     
-
+    
     var presenter: UpcomingResponse_ViewToPresenterProtocol?
     var upcomingMoviesResponse : [UpcomingResults] = []
-
+    
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +32,13 @@ class UpcomingResponseViewController: UIViewController {
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension UpcomingResponseViewController: UpcomingResponse_PresenterToViewProtocol {
-    func updateViewWithUpcomingResponse(withResponse response: UpcomingResults) {
-   //     self.upcomingMoviesResponse = response
+    func updateViewWithUpcomingResponse(withResponse response: UpcomingResponse) {
+        self.upcomingMoviesResponse = response.results ?? []
         print(response)
-        self.upcomingResponseTable.reloadData()
-        
-        
+        DispatchQueue.main.async {
+            self.upcomingResponseTable.reloadData()
+        }
     }
-    
-    
 }
+
+

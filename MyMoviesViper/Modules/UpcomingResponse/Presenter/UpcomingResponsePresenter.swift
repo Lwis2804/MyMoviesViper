@@ -21,9 +21,7 @@ class UpcomingResponsePresenter: UpcomingResponse_ViewToPresenterProtocol {
 
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension UpcomingResponsePresenter: UpcomingResponse_InteractorToPresenterProtocol {
-    func getUpcomingResponseFromInteractor(withResponse response: UpcomingResults) {
+    func getUpcomingResponseFromInteractor(withResponse response: UpcomingResponse) {
         view?.updateViewWithUpcomingResponse(withResponse: response)
     }
-    
-
 }

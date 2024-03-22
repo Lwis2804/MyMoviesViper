@@ -7,6 +7,13 @@
 
 
 import Foundation
+struct UpcomingResponse : Codable {
+    var page : Int?
+    var results : [UpcomingResults]?
+    var total_pages : Int?
+    var total_results : Int?
+}
+
 struct UpcomingResults : Codable {
     var adult : Bool?
     var backdrop_path : String?

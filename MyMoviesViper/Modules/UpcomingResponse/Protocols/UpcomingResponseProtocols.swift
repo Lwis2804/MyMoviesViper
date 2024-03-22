@@ -73,7 +73,7 @@ protocol UpcomingResponse_PresenterToInteractorProtocol: AnyObject {
 
 // MARK: INTERACTOR -> PRESENTER
 protocol UpcomingResponse_InteractorToPresenterProtocol: AnyObject {
-    func getUpcomingResponseFromInteractor(withResponse response : UpcomingResults)
+    func getUpcomingResponseFromInteractor(withResponse response : UpcomingResponse)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -91,7 +91,7 @@ protocol UpcomingResponse_InteractorToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> VIEW
 protocol UpcomingResponse_PresenterToViewProtocol: AnyObject {
     var presenter: UpcomingResponse_ViewToPresenterProtocol? { get set }
-    func updateViewWithUpcomingResponse(withResponse response : UpcomingResults)
+    func updateViewWithUpcomingResponse(withResponse response : UpcomingResponse)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
