@@ -15,15 +15,17 @@ class NowPlayingMoviesViewController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpNowPlayingTable()
         presenter?.getToNowPlayingMovies()
+        setUpNowPlayingTable()
     }
     
     func setUpNowPlayingTable() {
         self.nowPlayingMoviesTable.dataSource = self
         self.nowPlayingMoviesTable.delegate = self
-        self.nowPlayingMoviesTable.register(NowPlayingMoviesTableViewCell.nib, forHeaderFooterViewReuseIdentifier: NowPlayingMoviesTableViewCell.identifier)
+        self.nowPlayingMoviesTable.register(NowPlayingMoviesTableViewCell.nib, forCellReuseIdentifier: NowPlayingMoviesTableViewCell.identifier)
     }
+    
+   
 }
 
 // MARK: - P R E S E N T E R · T O · V I E W

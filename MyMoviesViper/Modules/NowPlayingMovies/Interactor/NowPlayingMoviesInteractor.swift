@@ -17,6 +17,7 @@ class NowPlayingMoviesInteractor: NowPlayingMovies_PresenterToInteractorProtocol
         service.consumeService { [weak self] (result : Result<NowPlayingResponse, ErrorWebService>) in
             switch result {
             case .success(let succes):
+              print(result)
                 self?.presenter?.getNowPlayingMoviesFromInteractor(withResponse: succes)
             case .failure(let error):
                 print(error.localizedDescription)
